@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/f4537393fc.js"></script>
+
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+        .tt {
+            color: goldenrod;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://127.0.0.1:5500/src/index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/src/authors.html">Authors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/src/about.html">About Java Bootcamp</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Git Guy</h2>
+
+    <h4>About the Author</h4>
+
+    <img src="https://vignette.wikia.nocookie.net/napoleondynamite/images/0/04/Kip_Dynamite.jpg/revision/latest?cb=20120117222921"
+        height="400" width="400" />
+
+    <p>Hi, I am Git Guy. Git is my favorite invention of all time. It makes my life so much easier. Lorem ipsum dolor
+        sit amet consectetur
+        adipisicing elit. Ducimus suscipit est similique quibusdam quam, placeat rem debitis voluptatibus architecto
+        magni, neque voluptates minima adipisci magnam atque veniam sed pariatur illo.</p>
+
+
+
+        <div th:replace="base :: footer"><i style="color: rgb(66, 103, 178); cursor: pointer;" onClick="goToFacebook()"
+            class="fa fa-facebook-square fa-3x" aria-hidden="true"></i><i style="color: rgb(29, 161, 242); cursor: pointer;" onClick="goToTwitter()"
+            class="fa fa-twitter fa-3x" aria-hidden="true"></i></div>
+
+    <script>
+        function goToFacebook() {
+            window.location.href = "https://www.facebook.com"
+        }
+
+        function goToTwitter(){
+            window.location.href = "https://www.twitter.com"
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
